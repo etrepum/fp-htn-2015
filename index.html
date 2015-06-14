@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css"/>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="vendor/vis-3.11.0/vis.css" />
+    <link rel="stylesheet" href="vendor/font-awesome-4.3.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="reveal.js/css/theme/white.css"/>
+  <link rel="stylesheet" media="print" href="reveal.js/css/print/pdf.css" />
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+    <title>Functional Programming in Industry</title>
+    <link rel="stylesheet" href="css/slides.css"/>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="title" class="slide level1">
+<h1>Functional Programming in Industry</h1>
+<h3>
+    
+Bob Ippolito (<a href="https://twitter.com/etrepum"><span class="citation" data-cites="etrepum">@etrepum</span></a>)<br> <a href="http://hightechnorway.com/">High Tech Norway</a><br> June 17, 2015
+</h3>
+<h4>
+<a href="http://bob.ippoli.to/fp-htn-2015/">bob.ippoli.to/fp-htn-2015</a>
+</h4>
+
+</section>
+<section id="who-am-i" class="slide level1">
+<h1>Who am I?</h1>
+<ul>
+<li>Self-taught programmer</li>
+<li>Open source contributor (Python, JS, Erlang, Haskell)</li>
+<li>Entrepreneur (past: Mochi Media, Pieceable, Nom Labs)</li>
+<li>Current Projects: Mission Bit</li>
+</ul>
+</section>
+<section id="mission-bit" class="slide level1">
+<h1>Mission Bit</h1>
+<ul>
+<li>501c3 non-profit in San Francisco</li>
+<li>Free after-school coding classes</li>
+<li>High school and middle school</li>
+<li>Taught by volunteer tech professionals</li>
+<li>Also: summer internships, company visits, hacker lab, etc.</li>
+<li><a href="http://www.missionbit.com/">missionbit.com</a></li>
+</ul>
+</section>
+<section id="thanks" class="slide level1">
+<h1>Thanks!</h1>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 63%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><p><strong>Slides</strong></p></td>
+<td style="text-align: left;"><p><a href="http://bob.ippoli.to/fp-htn-2015/">bob.ippoli.to/fp-htn-2015</a></p></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><p><strong>Source</strong></p></td>
+<td style="text-align: left;"><p><a href="https://github.com/etrepum/fp-htn-2015/">github.com/etrepum/fp-htn-2015</a></p></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><p><strong>Email</strong></p></td>
+<td style="text-align: left;"><p>bob@redivi.com</p></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><p><strong>Twitter</strong></p></td>
+<td style="text-align: left;"><p><a href="https://twitter.com/etrepum">@etrepum</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
+        center: false,
+        slideNumber: true,
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+//          { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+<script src="vendor/jquery-1.11.2.js"></script>
+<script src="vendor/vis-3.11.0/vis.js"></script>
+<script src="vendor/react-0.13.0/react-with-addons.js"></script>
+<script src="vendor/react-0.13.0/JSXTransformer.js"></script>
+<script src="vendor/lodash-3.5.0.js"></script>
+<script src="vendor/immutable-js-3.6.4/immutable.js"></script>
+<script src="code.jsx" type="text/jsx;harmony=true"></script>
+<script>
+  var p = window.location.protocol;
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script',(p === 'file:' ? 'https:' : p) + '//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30504730-1', 'ippoli.to');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

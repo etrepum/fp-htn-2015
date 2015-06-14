@@ -1,0 +1,101 @@
+body {
+/*  background-color: #f0f0f0;*/
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+/*  font-family: "Helvetica Neue", sans-serif;
+  */
+  font-weight: normal;
+  text-transform: none;
+}
+
+#title h3 { line-height: 1.25em; }
+
+.reveal {
+/*
+  font-family: "Gill Sans", sans-serif;
+  font-weight: normal;
+*/
+}
+
+.reveal section h1 { margin-bottom: 30px; font-size: 2.25em; }
+.reveal section.small-title h1 { font-size: 2em; }
+.reveal section.tiny-title h1 { font-size: 1.5em; }
+
+.reveal ul { display: block; margin-left: 1em; }
+
+.reveal .large-quote { font-size: 2.5em; line-height: 1em; }
+#paradox dd { text-align: right; }
+
+.reveal li { margin-bottom: 0.5em; }
+.reveal dl dt { text-align: left; font-weight: bold; }
+.reveal dl dd { text-align: left; margin-left: 1.5em; }
+.syntax pre { box-shadow: none; font-size: 1.2em; }
+.reveal img { max-height: 80%; }
+
+.reveal pre code {
+  padding: 0;
+  background-color: inherit;
+  color: #333;
+}
+.reveal section pre { box-shadow: none; font-size: 0.9em; }
+.small-code pre { font-size: 0.45em; }
+.wide-code pre {  margin-left: -3%; }
+.no-header h1 { display: none; }
+.no-header pre { margin-top: -0.5em; }
+.reveal img.full { max-width: 100%; max-height: 100%; width: 80%; height: auto; }
+
+.highlight .hl,
+.highlight-type .hl-type,
+.highlight-constructor .hl-constructor {
+  background-color: #ffff00;
+}
+.highlight .hl1 {
+  background-color: #eeee00;
+}
+.highlight .hl2 {
+  background-color: #dddd00;
+}
+
+.reveal blockquote {
+  margin-top: 1em;
+  box-shadow: none;
+  width: 80%;
+  text-align: left;
+}
+
+.reveal blockquote footer {
+  text-align: right;
+  font-size: 0.6em;
+  margin-top: 1em;
+}
+
+.reveal pre code {
+  max-height: inherit;
+}
+
+.left {
+  text-align: left;
+}
+
+.reveal .react-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.reveal table.array {
+  border: 1px solid black;
+}
+
+.reveal table.array td {
+  border: 1px solid black;
+}
+
+.reveal .array .shared td {
+  background-color: #ccf;
+}
