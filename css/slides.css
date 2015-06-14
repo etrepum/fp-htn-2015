@@ -43,12 +43,37 @@ body {
   background-color: inherit;
   color: #333;
 }
-.reveal section pre { box-shadow: none; font-size: 0.9em; }
-.small-code pre { font-size: 0.45em; }
+.reveal section pre { box-shadow: none; font-size: 0.6em; }
+.reveal section.small-code pre { font-size: 0.45em; }
 .wide-code pre {  margin-left: -3%; }
 .no-header h1 { display: none; }
 .no-header pre { margin-top: -0.5em; }
 .reveal img.full { max-width: 100%; max-height: 100%; width: 80%; height: auto; }
+
+#mission-bit .mission-bit-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  opacity: 0.075;
+  border: 0;
+  box-shadow: none;
+}
+
+section blockquote strong {
+  background-color: rgba(255,255,255,0);
+}
+
+section.present blockquote strong {
+  transition: background-color 5s;
+  background-color: rgba(255,251,204,0.5);
+}
+
+#learn-more-haskell {
+  font-size: 90%;
+}
 
 .highlight .hl,
 .highlight-type .hl-type,
@@ -99,3 +124,46 @@ body {
 .reveal .array .shared td {
   background-color: #ccf;
 }
+
+svg.full { width: 70%; }
+#supervisor g {
+  cursor: pointer;
+}
+#supervisor g:hover {
+  opacity: 0.5;
+}
+#distributed-diagram svg {
+  cursor: pointer;
+}
+#scheduler img { border: none; box-shadow: none; width: 85%; }
+.diagram text { text-anchor: middle; alignment-baseline: central; }
+.diagram rect { fill: none; stroke: black; }
+.diagram circle { stroke: rgb(0, 0, 0); }
+.diagram line { stroke: rgb(0, 0, 0); }
+.diagram .supervisor circle { fill: rgb(255,128,128); }
+.diagram .worker circle { fill: rgb(128,255,128); }
+.diagram .messages circle { fill: rgb(128,128,255); }
+.diagram .messages circle.response { fill: rgb(128,255,255); }
+.diagram .node > text, .diagram .epmd > text { font-size: 80%; }
+.diagram .epmd > rect { fill: rgb(230, 230, 230); }
+.diagram line.tcp { stroke-width: 5; stroke-dasharray: 15,5; }
+.diagram .phase1 { opacity: 0; }
+.diagram .phase2 { opacity: 0; }
+
+#concurrency-table { width: 100%; color: #666; }
+#concurrency-table td { border-bottom: none; }
+#concurrency-table .num { text-align: right; }
+#concurrency-table .name { padding-left: 1em; }
+#concurrency-table .bar-ctr { height: 0; z-index: -1}
+#concurrency-table .bar { height: 1.2em; background-color: #ccc; z-index: -1; }
+#concurrency-table .haskell { color: #66f; }
+#concurrency-table .erlang { color: #66f; }
+#concurrency-table .haskell .bar { width: 1.99%; }
+#concurrency-table .erlang .bar { width: 4.0625%; }
+#concurrency-table .go .bar { width: 12.5%; }
+#concurrency-table .java-min .bar { width: 100%; }
+#concurrency-table .c-min .bar { width: 100%; }
+#concurrency-table .java .bar { width: 12.5%; background-color: #fcc; }
+#concurrency-table .c .bar { width: 100%; background-color: #fcc; }
+
+#message-passing pre, #message-passing-2 pre { font-size: 1.2em; }
